@@ -36,19 +36,16 @@ The work is divided into the following main parts:
 
 This repository includes the following files and folders:
 
-- `Report/`  
+- `Informe/`  
   Contains the Live Script file in MATLAB format (`.mlx`) with results, calculations, and graphs in IMRAD format.
 
-- `Simulations/`  
+- `Simulaciones/`  
   Includes the Simulink (`.slx`) files for:
   1. Generating experimental data with noise.
   2. State feedback control.
 
 - `README.md`  
   This file.
-
-- `References/`  
-  Bibliographic resources used to develop the project.
 
 ## Prerequisites
 
@@ -61,15 +58,15 @@ This repository includes the following files and folders:
 ## How to Execute the Project
 
 1. **Simulation and Data Collection**
-   - Open the Simulink file in `Simulations/`.
+   - Open the Simulink file in `Simulaciones/`.
    - Run the simulation to generate experimental data.
 
 2. **Kalman Filter Analysis**
-   - Open the Live Script file in `Report/`.
+   - Open the Live Script file in `Informe/`.
    - Execute the cells step by step to generate graphs and analysis.
 
 3. **State Feedback Control**
-   - Open the corresponding Simulink file in `Simulations/`.
+   - Open the corresponding Simulink file in `Simulaciones/`.
    - Modify initial conditions as needed.
    - Run the simulation to observe the controlled behavior.
 
