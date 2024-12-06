@@ -1,83 +1,83 @@
-# Proyecto: Implementación de Filtro de Kalman para un Sistema Dinámico No Lineal
+# Project: Kalman Filter Implementation for a Nonlinear Dynamic System
 
-Este repositorio contiene el desarrollo de un proyecto sobre filtros de Kalman, incluyendo la simulación, implementación y análisis de diferentes variantes de este filtro para un sistema dinámico no lineal con entrada. 
+This repository contains the development of a project on Kalman filters, including the simulation, implementation, and analysis of different variants of this filter for a nonlinear dynamic system with input.
 
-## Contenido del Proyecto
+## Project Content
 
-El trabajo se divide en las siguientes partes principales:
+The work is divided into the following main parts:
 
-1. **Toma de Datos Experimentales**
-   - Simulación de un sistema dinámico no lineal en Simulink.
-   - Generación de datos experimentales con ruido.
+1. **Experimental Data Collection**
+   - Simulation of a nonlinear dynamic system in Simulink.
+   - Generation of experimental data with noise.
 
-2. **Filtro Extendido de Kalman (EKF)**
-   - Implementación del filtro extendido de Kalman para estimar los estados del sistema.
-   - Análisis gráfico de los resultados:
-     - Estados estimados e intervalos de confianza.
-     - Traza de la matriz de covarianzas.
-     - Norma de la ganancia de Kalman.
-     - Prueba de blancura.
+2. **Extended Kalman Filter (EKF)**
+   - Implementation of the extended Kalman filter to estimate the system states.
+   - Graphical analysis of results:
+     - Estimated states and confidence intervals.
+     - Trace of the covariance matrix.
+     - Kalman gain norm.
+     - Whiteness test.
 
-3. **Filtro de Kalman Conjunto (JKF)**
-   - Implementación del filtro conjunto de Kalman para estimar estados y parámetros.
-   - Análisis gráfico de los resultados:
-     - Estados y parámetros estimados.
-     - Número de condición de la matriz de observabilidad.
-     - Norma de la ganancia de Kalman.
+3. **Joint Kalman Filter (JKF)**
+   - Implementation of the joint Kalman filter to estimate states and parameters.
+   - Graphical analysis of results:
+     - Estimated states and parameters.
+     - Condition number of the observability matrix.
+     - Kalman gain norm.
 
-4. **Control de Realimentación del Estado**
-   - Implementación de un controlador de realimentación del estado utilizando el EKF.
-   - Simulación y análisis de los resultados:
-     - Estados controlados.
-     - Acción de control.
-     - Robustez frente a perturbaciones.
+4. **State Feedback Control**
+   - Implementation of a state feedback controller using the EKF.
+   - Simulation and analysis of results:
+     - Controlled states.
+     - Control action.
+     - Robustness against disturbances.
 
-## Estructura del Repositorio
+## Repository Structure
 
-Este repositorio incluye los siguientes archivos y carpetas:
+This repository includes the following files and folders:
 
-- `Informe/`  
-  Contiene el archivo Live Script en formato MATLAB (`.mlx`) con los resultados, cálculos y gráficos en formato IMRAD.
+- `Report/`  
+  Contains the Live Script file in MATLAB format (`.mlx`) with results, calculations, and graphs in IMRAD format.
 
-- `Simulaciones/`  
-  Incluye los archivos de Simulink (`.slx`) para:
-  1. Generación de datos experimentales con ruido.
-  2. Control de realimentación del estado.
+- `Simulations/`  
+  Includes the Simulink (`.slx`) files for:
+  1. Generating experimental data with noise.
+  2. State feedback control.
 
 - `README.md`  
-  Este archivo.
+  This file.
 
-- `Referencias/`  
-  Recursos bibliográficos utilizados para desarrollar el proyecto.
+- `References/`  
+  Bibliographic resources used to develop the project.
 
-## Requisitos Previos
+## Prerequisites
 
-- **MATLAB** con soporte para Live Scripts y Simulink.
-- Conocimientos básicos sobre:
-  - Sistemas dinámicos no lineales.
-  - Filtros de Kalman (EKF y JKF).
-  - Control de sistemas.
+- **MATLAB** with support for Live Scripts and Simulink.
+- Basic knowledge of:
+  - Nonlinear dynamic systems.
+  - Kalman filters (EKF and JKF).
+  - System control.
 
-## Cómo Ejecutar el Proyecto
+## How to Execute the Project
 
-1. **Simulación y Toma de Datos**
-   - Abrir el archivo de Simulink en `Simulaciones/`.
-   - Ejecutar la simulación para generar datos experimentales.
+1. **Simulation and Data Collection**
+   - Open the Simulink file in `Simulations/`.
+   - Run the simulation to generate experimental data.
 
-2. **Análisis del Filtro de Kalman**
-   - Abrir el archivo Live Script en `Informe/`.
-   - Ejecutar las celdas paso a paso para generar gráficos y análisis.
+2. **Kalman Filter Analysis**
+   - Open the Live Script file in `Report/`.
+   - Execute the cells step by step to generate graphs and analysis.
 
-3. **Control de Realimentación**
-   - Abrir el archivo de Simulink correspondiente en `Simulaciones/`.
-   - Modificar las condiciones iniciales según sea necesario.
-   - Ejecutar la simulación para observar el comportamiento controlado.
+3. **State Feedback Control**
+   - Open the corresponding Simulink file in `Simulations/`.
+   - Modify initial conditions as needed.
+   - Run the simulation to observe the controlled behavior.
 
-## Formato del Informe
+## Report Format
 
-El informe sigue el formato IMRAD (Introducción, Métodos, Resultados y Discusión). 
+The report follows the IMRAD format (Introduction, Methods, Results, and Discussion). 
 
-- **Introducción**: Breve descripción del problema y del modelo utilizado.
-- **Métodos**: Descripción de la implementación y procedimientos realizados.
-- **Resultados**: Gráficos y análisis de los filtros y control.
-- **Discusión**: Interpretación y discusión de los resultados obtenidos.
+- **Introduction**: Brief description of the problem and the model used.
+- **Methods**: Description of the implementation and procedures performed.
+- **Results**: Graphs and analysis of the filters and control.
+- **Discussion**: Interpretation and discussion of the obtained results.
